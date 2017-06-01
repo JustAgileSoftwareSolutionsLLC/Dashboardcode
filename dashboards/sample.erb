@@ -1,0 +1,41 @@
+<% content_for :title do %>Verity Dashboard<% end %>
+<div class="gridster">
+  <ul>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="welcome" data-view="Text" data-title="Hello" data-text="Verity Dashboard." data-moreinfo="Protip: You can drag the widgets around!"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="synergy" data-view="Meter" data-title="Synergy" data-height="200" data-width="200" data-min="0" data-max="100" data-suffix="%"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="BuildHistory" data-view="List" data-max_samples="100" data-title="JENKINS" data-show_job_titles="true" data-sample_spacers="true"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="valuation" data-view="Number" data-title="Current Valuation" data-moreinfo="In billions" data-prefix="$"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-id="JustAgileSoftwareSolutionsLLC/Verity" data-view="GithubStats"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="job1" data-view="JenkinsBuild" data-title="Jenkins Build" data-description="Continuous Integration" data-min="0" data-max="100"></div>
+    </li>
+
+    <li data-row="1", data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="response_time" data-view="List" data-title="SonarQube" data-unordered="true" data-moreinfo="Sonar"</div>
+    </li>
+  
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="sonar" data-view="List" data-title="sonar stats" data-unordered="true" data-moreinfo="values as %"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="convergence" data-view="Graph" data-title="Convergence" style="background-color:#ff9618"></div>
+    </li>
+  </ul>
+  <center><div style="font-size: 12px">Try this: curl -d '{ "auth_token": "YOUR_AUTH_TOKEN", "text": value }' \http://<%=request.host%>:<%=request.port%>/widgets/welcome</div></center>
+</div>

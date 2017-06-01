@@ -1,0 +1,43 @@
+{
+  "_class" : "hudson.model.Hudson",
+  "assignedLabels" : [
+    {
+      
+    }
+  ],
+  "mode" : "NORMAL",
+  "nodeDescription" : "the master Jenkins node",
+  "nodeName" : "",
+  "numExecutors" : 2,
+  "description" : null,
+  "jobs" : [
+    {
+      "_class" : "hudson.model.FreeStyleProject",
+      "name" : "sample_project",
+      "url" : "http://localhost:8080/job/sample_project/",
+      "color" : "blue"
+    }
+  ],
+  "overallLoad" : {
+    
+  },
+  "primaryView" : {
+    "_class" : "hudson.model.AllView",
+    "name" : "all",
+    "url" : "http://localhost:8080/"
+  },
+  "quietingDown" : false,
+  "slaveAgentPort" : -1,
+  "unlabeledLoad" : {
+    "_class" : "jenkins.model.UnlabeledLoadStatistics"
+  },
+  "useCrumbs" : true,
+  "useSecurity" : true,
+  "views" : [
+    {
+      "_class" : "hudson.model.AllView",
+      "name" : "all",
+      "url" : "http://localhost:8080/"
+    }
+  ]
+}
